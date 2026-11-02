@@ -1,0 +1,759 @@
+
+
+.hero {
+    min-height: 650px;
+
+    background-color: var(--pink);
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 65px 0 90px;
+}
+
+
+.hero-container {
+    width: min(1120px, 88%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+
+    align-items: center;
+    gap: 65px;
+}
+
+
+.hero-content {
+    max-width: 550px;
+}
+
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background-color: #B88C82;
+}
+
+
+.hero-content h1 {
+    font-family: var(--font-heading);
+
+    font-size: clamp(46px, 5.4vw, 70px);
+
+    font-weight: 400;
+    line-height: 1.13;
+    letter-spacing: -2px;
+
+    color: var(--espresso);
+}
+
+
+.hero-content h1 span {
+    color: #c23a4c;
+    font-style: italic;
+}
+
+
+.hero-description {
+    max-width: 430px;
+
+    margin-top: 25px;
+
+    color: var(--brown);
+
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    margin-top: 32px;
+}
+
+
+.hero-note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: 45px;
+
+    color: var(--brown);
+
+    font-size: 11px;
+}
+
+
+.hero-note span {
+    color: #B77D85;
+    font-size: 17px;
+}
+
+
+/* PHOTO STRIP VISUAL */
+
+.hero-visual {
+    min-height: 475px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+
+.photo-strip {
+    width: 210px;
+
+    padding: 12px 12px 14px;
+
+    background-color: var(--white);
+
+    box-shadow: 0 15px 40px rgba(73, 56, 58, 0.13);
+
+    transform: rotate(4deg);
+
+    position: relative;
+    z-index: 2;
+}
+
+
+.strip-header,
+.strip-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--brown);
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+
+.strip-header {
+    padding: 3px 1px 10px;
+}
+
+
+.strip-footer {
+    padding: 10px 1px 0;
+}
+
+
+.strip-footer span:last-child {
+    color: #B77D85;
+    font-size: 13px;
+}
+
+/* ========================================
+   PHOTO STRIP IMAGES
+======================================== */
+
+.strip-photo {
+    width: 100%;
+    height: 118px;
+
+    margin-bottom: 7px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* USER PHOTOS */
+
+.strip-photo img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.4s ease;
+}
+
+/* SUBTLE HOVER EFFECT */
+
+.strip-photo:hover img {
+    transform: scale(1.04);
+}
+
+/* PHOTO NUMBERS */
+
+.photo-number {
+    position: absolute;
+    bottom: 7px;
+    right: 8px;
+
+    color: white;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    z-index: 3;
+
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* 4. DECORATIVE DETAILS */
+
+.decor {
+    position: absolute;
+
+    color: #c23a4c;
+
+    z-index: 3;
+}
+
+
+.decor-star {
+    top: 55px;
+    right: 85px;
+
+    font-size: 38px;
+}
+
+
+.decor-heart {
+    top: 135px;
+    left: 30px;
+
+    font-size: 30px;
+
+    transform: rotate(-15deg);
+}
+
+
+.decor-sparkle {
+    bottom: 115px;
+    right: 75px;
+
+    font-size: 45px;
+}
+
+
+.visual-caption {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 32px;
+
+    color: var(--brown);
+
+    font-family: var(--font-heading);
+    font-size: 14px;
+    font-style: italic;
+
+    transform: rotate(2deg);
+}
+
+
+.caption-line {
+    width: 28px;
+    height: 1px;
+
+    background-color: var(--pink-accent);
+}
+
+
+/* 5. HERO BOTTOM */
+
+.hero-bottom {
+    position: absolute;
+    bottom: 23px;
+
+    width: 100%;
+    padding: 0 6%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--brown);
+
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+
+.scroll-arrow {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+/* 6. ABOUT SECTION */
+
+.about-section {
+    padding: 110px 0;
+
+    background-color: var(--cream);
+}
+
+
+.about-content {
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 60px;
+}
+
+
+.about-content h2,
+.how-heading h2 {
+    font-family: var(--font-heading);
+
+    font-size: clamp(32px, 4vw, 47px);
+
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -1px;
+}
+
+
+.about-content h2 em,
+.how-heading h2 em {
+    color: #c23a4c;
+    font-weight: 400;
+}
+
+
+.about-content p {
+    max-width: 340px;
+
+    color: var(--brown);
+
+    font-size: 13px;
+    line-height: 2;
+}
+
+
+.about-details {
+    margin-top: 70px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 35px;
+
+    border-top: 1px solid var(--border);
+}
+
+
+.detail-item {
+    padding-top: 27px;
+}
+
+
+.detail-icon {
+    color: #c23a4c;
+    font-size: 24px;
+}
+
+
+.detail-item h3 {
+    margin-top: 14px;
+
+    font-family: var(--font-heading);
+    font-size: 19px;
+    font-weight: 500;
+}
+
+
+.detail-item p {
+    max-width: 270px;
+
+    margin-top: 9px;
+
+    color: var(--brown);
+
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+
+/* 7. HOW IT WORKS SECTION */
+
+.how-section {
+    padding: 110px 0;
+
+    background-color: var(--pink-accent);
+}
+
+
+.how-heading {
+    margin-top: 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+
+.how-heading p {
+    color: var(--brown);
+
+    font-size: 13px;
+}
+
+
+.steps-grid {
+    margin-top: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* STEP CARDS */
+
+.step-card {
+    background-color: var(--cream);
+
+    padding: 20px;
+
+    border: 1px solid var(--border);
+}
+
+
+.step-number {
+    color: #c23a4c;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+/* STEP ILLUSTRATIONS */
+
+.step-illustration {
+    height: 190px;
+
+    margin: 20px 0;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+.illustration-one {
+    background-color: #F3E2DF;
+}
+
+
+.illustration-two {
+    background-color: #E9D3CB;
+}
+
+
+.illustration-three {
+    background-color: #F1E4D9;
+}
+
+
+/* FIRST ILLUSTRATION */
+
+.mini-card {
+    width: 90px;
+    padding: 10px;
+
+    background-color: white;
+
+    box-shadow: 0 8px 20px rgba(73, 56, 58, 0.12);
+
+    transform: rotate(-5deg);
+}
+
+
+.mini-photo {
+    height: 85px;
+
+    background: linear-gradient(145deg, #D7B5AB, #A87F78);
+}
+
+
+.mini-lines {
+    width: 55px;
+    height: 3px;
+
+    margin: 9px auto 0;
+
+    background-color: #E9D9D3;
+}
+
+
+/* SECOND ILLUSTRATION */
+
+.camera-illustration {
+    width: 115px;
+    height: 78px;
+
+    position: relative;
+
+    background-color: var(--espresso);
+
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 10px 20px rgba(73, 56, 58, 0.15);
+}
+
+
+.camera-illustration::before {
+    content: "";
+
+    width: 40px;
+    height: 12px;
+
+    position: absolute;
+    top: -10px;
+    left: 20px;
+
+    background-color: var(--espresso);
+
+    border-radius: 5px 5px 0 0;
+}
+
+
+.camera-lens {
+    width: 42px;
+    height: 42px;
+
+    border: 7px solid #D9B9A7;
+    border-radius: 50%;
+
+    background-color: #A67D78;
+}
+
+
+.camera-flash {
+    width: 9px;
+    height: 9px;
+
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    background-color: var(--pink-dark);
+
+    border-radius: 50%;
+}
+
+
+/* THIRD ILLUSTRATION */
+
+.mini-strip {
+    width: 65px;
+
+    padding: 7px;
+
+    background-color: white;
+
+    box-shadow: 0 8px 20px rgba(73, 56, 58, 0.12);
+
+    transform: rotate(5deg);
+}
+
+
+.mini-strip span {
+    display: block;
+
+    height: 35px;
+
+    margin-bottom: 5px;
+
+    background: linear-gradient(135deg, #D7B5AB, #A87F78);
+}
+
+
+.mini-strip span:last-child {
+    margin-bottom: 0;
+}
+
+
+.illustration-decoration {
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    color: #B77D85;
+
+    font-size: 28px;
+}
+
+
+.step-card h3 {
+    font-family: var(--font-heading);
+    font-size: 21px;
+    font-weight: 500;
+}
+
+
+.step-card p {
+    margin-top: 10px;
+
+    color: var(--brown);
+
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+/* 8. HOW IT WORKS BUTTON */
+
+.how-button-container {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+/* 9. RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+    .hero-container {
+        gap: 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 54px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 65px 0 85px;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(45px, 11vw, 62px);
+    }
+
+    .hero-description {
+        max-width: 500px;
+    }
+
+    .hero-visual {
+        min-height: 440px;
+    }
+
+    .decor-star {
+        right: 15%;
+    }
+
+    .decor-sparkle {
+        right: 15%;
+    }
+
+    .about-section,
+    .how-section {
+        padding: 80px 0;
+    }
+
+    .about-details {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .detail-item {
+        padding-top: 20px;
+    }
+
+    .how-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .step-illustration {
+        height: 210px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .hero-buttons {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero-note {
+        margin-top: 30px;
+        font-size: 10px;
+    }
+
+    .photo-strip {
+        width: 185px;
+    }
+
+    .strip-photo {
+        height: 105px;
+    }
+
+    .hero-bottom {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+}
