@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeInFour</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <div id="shader-background"></div>
+    <main class="page-shell">
+        <section class="booth">
+            <div class="intro">
+                <h2>Welcome to LifeInFour!</h2>
+                <ul>
+                    <li>Start your camera</li>
+                    <li>Take four photos</li>
+                    <li>Save your memories</li>
+                </ul>
+                <div class="progress" id="progress">0 / 4 photos</div>
+                <div class="mini-gallery" id="gallery"></div>
+            </div>
+
+            <div class="studio">
+                <h1>Ready? Shoot!</h1>
+                <div class="camera-box">
+                    <video id="camera" autoplay muted playsinline></video>
+                    <div class="placeholder" id="placeholder">
+                        <p>Your camera will appear here</p>
+                    </div>
+                    <div class="countdown" id="countdown" hidden></div>
+                </div>
+                <p class="status" id="status">Click Start Camera to begin.</p>
+                <div class="buttons">
+                    <button id="startButton">Start Camera</button>
+                    <button id="photoButton" disabled>Take Photo</button>
+                    <button id="retakeButton" class="secondary" disabled>Retake All</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo strip -->
+        <section class="result" id="result" hidden>
+            <h2>Your moments</h2>
+            <img id="photoStrip" alt="Your photo strip">
+            <div class="buttons">
+                <button id="downloadButton">Download PNG</button>
+                <button id="retakeResultButton" class="secondary"> Retake All </button>
+            </div>
+        </section>
+        <footer>LifeInFour - By Camille Phan</footer>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
